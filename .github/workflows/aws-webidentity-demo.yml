@@ -20,6 +20,6 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::637423500059:role/GitHub-WebIdentity
           aws-region: us-east-1
-      - name: List s3 files
+      - name: List s3 buckets
         run: |
           aws s3api list-buckets
